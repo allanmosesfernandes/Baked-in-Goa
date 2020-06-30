@@ -1,0 +1,24 @@
+{
+  "name": "baked",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "dev": "parcel index.html"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allanmosesfernandes/Baked-in-Goa.git"
+  },
+  "author": "Allan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allanmosesfernandes/Baked-in-Goa/issues"
+  },
+  "homepage": "https://github.com/allanmosesfernandes/Baked-in-Goa#readme",
+  "devDependencies": {
+    "sass": "^1.26.9"
+  }
+}
