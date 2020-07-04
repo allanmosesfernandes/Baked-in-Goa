@@ -1,10 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
 nav {
     height: 10vh;
-    background-color: rosybrown;
+
+    img {
+        height: 100%;
+    }
 }
 
+
+
+.hero {
+    font-family: 'Notable', sans-serif;
+    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #edf5e1;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 5px;
+
+    h1 {
+        font-family: inherit;
+    }
+}
 .first-fold {
-    background-image: url('../images/first-fold.png');
+    // background-image: url('../images/first-fold.png');
     height: 90vh;
     width: 100%;
     background-repeat: no-repeat;
@@ -19,7 +40,7 @@ nav {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: #5cdb95;
+    background-color: #00bb77;
     opacity: 0.25;
 }
 
@@ -52,3 +73,5 @@ nav {
             width: 300px;
         }
     }
+
+    

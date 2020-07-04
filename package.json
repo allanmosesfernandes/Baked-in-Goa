@@ -7,7 +7,7 @@
     "start": "parcel index.html",
     "build": "parcel build index.html",
     "dev": "parcel index.html"
-    },
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/allanmosesfernandes/Baked-in-Goa.git"
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/allanmosesfernandes/Baked-in-Goa#readme",
   "devDependencies": {
+    "cssnano": "^4.1.10",
     "sass": "^1.26.9"
   }
 }
