@@ -8,16 +8,61 @@ nav {
     width: 100%;
     height: 10vh;
 
-    img {
-        height: 100%;
-    }
-
     .lode {
         position: absolute;
         left: 0;
         z-index: -1;
     }
 
+}
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+.icon-scroll {
+    width: 44px;
+    height: 70px;
+    margin-left: 180px;
+    top: -60px;
+    margin-top: -35px;
+    box-shadow: inset 0 0 0 1px #fff;
+    border-radius: 25px;
+}
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+}
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(46px);
+            transform: translateY(46px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(46px);
+            transform: translateY(46px);
+  }
 }
 
 
@@ -27,10 +72,11 @@ nav {
     color: #fff;
     text-align: center;
     letter-spacing: 5px;
+    padding: 20px;
 
     h1 {
         font-family: inherit;
-        font-size: 40px;
+        font-size: 60px;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: #edf5e1;
@@ -46,8 +92,6 @@ nav {
     // background-image: url('../images/first-fold.png');
     height: 90vh;
     width: 100%;
-    padding: 20px;
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
