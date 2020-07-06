@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap');
 nav {
+
+    // background-image: url('../images/svg.svg');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 100%;
     height: 10vh;
 
     img {
         height: 100%;
     }
+
+    .lode {
+        position: absolute;
+        left: 0;
+        z-index: -1;
+    }
+
 }
 
 
@@ -13,21 +25,29 @@ nav {
 .hero {
     font-family: 'Notable', sans-serif;
     color: #fff;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #edf5e1;
-    font-size: 60px;
     text-align: center;
     letter-spacing: 5px;
 
     h1 {
         font-family: inherit;
+        font-size: 40px;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #edf5e1;
+    }
+
+    p {
+        font-family: 'Karla', sans-serif;
+        font-size: 20px;
     }
 }
+
 .first-fold {
     // background-image: url('../images/first-fold.png');
     height: 90vh;
     width: 100%;
+    padding: 20px;
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -54,24 +74,22 @@ nav {
 
 
 
-    .img-container {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
+.img-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
 
-        .pizzaLeft {
-            position: absolute;
-            left: -150px;
-            bottom: 0;
-            width: 300px;
-        }
-
-        .pizzaRight {
-            position: absolute;
-            right: -573px;
-            bottom: 0;
-            width: 300px;
-        }
+    .pizzaLeft {
+        position: absolute;
+        left: -150px;
+        bottom: 0;
+        width: 300px;
     }
 
-    
+    .pizzaRight {
+        position: absolute;
+        right: -573px;
+        bottom: 0;
+        width: 300px;
+    }
+}
