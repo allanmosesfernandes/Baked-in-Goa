@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+.about {
+    margin-top: 100px;
+    font-family: 'Notable', sans-serif;
+    text-align: center;
+    background-image: url('https://trianglify.io/p/w:1440!h:900!x:YlGn!v:0.917!c:0.107!s:nyzlyb!f:il!i:0.30');
+}
+
+
+.grid-bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portfolio-item {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+         transform: scale(1.12);
+         transition: all 0.2s ease-in;
+    }
+    &.medium {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    &.large {
+        grid-row: span 3;
+        grid-column: span 3;
+    }
+
+    &.small {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    &.tall {
+        grid-row: 4 / 7;
+        grid-column: 4 /span 2;
+    }
+    &.wide {
+        grid-row: span 2;
+        grid-column: span 3;
+    }
+}
+.main-content {
+    height: 100vh;
+    padding: 10px;
+
+}
+.portfolio {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 10px;
+
+}
+
+.two {
+    background-image: url(../images/first-fold.png);
+    @extend .grid-bg;
+}
+
+.one {
+    background-image: url(../images/corona.png);
+    @extend .grid-bg;
+}
+
+.three {
+    background-image: url(../images/quiche.png);
+    @extend .grid-bg;
+}
+
+.five {
+    background-image: url(../images/lovely.png);
+    @extend .grid-bg;
+}
+
+.four {
+    background-image: url(../images/central.png);
+    @extend .grid-bg;
+}
+.six {
+    background-image: url(../images/mast-box.png);
+    @extend .grid-bg;
+}
+
+.safety {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 30px; 
+    }
+
+    p {
+        font-family: "Muli", sans-serif;
+        font-size: 24px;
+        color: #edf5e1;
+        text-align: center;
+        padding: 10px;
+
+    }
+}
+
+.tight {
+    display: inline-block;
+    margin: 10px 0;
+}

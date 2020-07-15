@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
 nav {
 
     // background-image: url('../images/svg.svg');
@@ -15,11 +16,13 @@ nav {
     }
 
 }
+
 .icon-scroll,
 .icon-scroll:before {
-  position: absolute;
-  left: 50%;
+    position: absolute;
+    left: 50%;
 }
+
 .icon-scroll {
     width: 44px;
     height: 70px;
@@ -29,52 +32,63 @@ nav {
     box-shadow: inset 0 0 0 1px #fff;
     border-radius: 25px;
 }
+
 .icon-scroll:before {
-  content: '';
-  width: 8px;
-  height: 8px;
-  background: #fff;
-  margin-left: -4px;
-  top: 8px;
-  border-radius: 4px;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-name: scroll;
-          animation-name: scroll;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+    animation-name: scroll;
 }
+
 @-webkit-keyframes scroll {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(46px);
-            transform: translateY(46px);
-  }
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(46px);
+        transform: translateY(46px);
+    }
 }
+
 @keyframes scroll {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(46px);
-            transform: translateY(46px);
-  }
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(46px);
+        transform: translateY(46px);
+    }
 }
 
 
 
 .hero {
+    background-image: url('../images/star.png');
+    background-size: contain;
+    background-position: center;
     font-family: 'Notable', sans-serif;
     color: #fff;
     text-align: center;
     letter-spacing: 5px;
-    padding: 20px;
+    padding: 0 20px;
+    position: relative;
 
     h1 {
+        margin-top: 20px;
+        margin-bottom: 0;
         font-family: inherit;
         font-size: 60px;
         -webkit-text-fill-color: transparent;
@@ -83,8 +97,8 @@ nav {
     }
 
     p {
-        font-family: 'Karla', sans-serif;
-        font-size: 20px;
+        font-family: 'Muli', sans-serif;
+        font-size: 16px;
     }
 }
 
@@ -99,14 +113,14 @@ nav {
     overflow-x: hidden;
 }
 
-.first-fold::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: #00bb77;
-    opacity: 0.25;
-}
+// .first-fold::before {
+//     content: '';
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     background-color: #00bb77;
+//     opacity: 0.25;
+// }
 
 .pizza-div {
     display: flex;
@@ -125,15 +139,15 @@ nav {
 
     .pizzaLeft {
         position: absolute;
-        left: -150px;
-        bottom: 0;
+        left: -176px;
+        bottom: -69px;
         width: 300px;
     }
 
     .pizzaRight {
         position: absolute;
         right: -573px;
-        bottom: 0;
+        bottom: -69px;
         width: 300px;
     }
 }
