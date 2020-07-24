@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
 
+@import './typography.scss';
+
 .about {
-    margin-top: 100px;
     font-family: 'Notable', sans-serif;
     text-align: center;
     background-image: url('https://trianglify.io/p/w:1440!h:900!x:YlGn!v:0.917!c:0.107!s:nyzlyb!f:il!i:0.30');
@@ -20,7 +21,7 @@
     align-items: center;
 
     &:hover {
-         transform: scale(1.12);
+         transform: scale(1.02);
          transition: all 0.2s ease-in;
     }
     &.medium {
@@ -50,6 +51,7 @@
 .main-content {
     height: 100vh;
     padding: 10px;
+    border: 5px solid whitesmoke;
 
 }
 .portfolio {
@@ -95,19 +97,37 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 60px 0;
 
     h1 {
-        font-family: 'Quicksand', sans-serif;
+        @extend .ibm-flex;
+        // font-family: 'Quicksand', sans-serif;
+        font-family: 'Notable', sans-serif;
         font-size: 30px; 
+        text-transform: uppercase;
     }
 
-    p {
-        font-family: "Muli", sans-serif;
+    .tight {
+        @extend .ibm-flex;
+        position: relative;
+        font-size: 24px;
+    }
+
+    .tight::after {
+        content: "";
+        position: absolute;
+        width: 270px;
+        height: 2px;
+        bottom: -13px;
+        left: 0;
+        background-color: #fff;
+
+    }
+    .tight-text {
+        @extend .dm-sans;
         font-size: 24px;
         color: #edf5e1;
-        text-align: center;
-        padding: 10px;
-
+        padding: 0 20px;
     }
 }
 
@@ -115,3 +135,5 @@
     display: inline-block;
     margin: 10px 0;
 }
+
+ 
