@@ -5,9 +5,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 120px 0;
-
-    h1 {
+    margin: 120px 0 50px 0;
+    height:100%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+        h1 {
         @extend .ibm-flex;
         // font-family: 'Quicksand', sans-serif;
         font-family: 'Notable', sans-serif;
@@ -15,10 +17,32 @@
         text-transform: uppercase;
 
     }
+
     .tight-text {
         @extend .dm-sans;
         font-size: 24px;
         color: #edf5e1;
         padding: 0 20px;
+    }
+}
+
+
+.contact-div {
+    flex-direction: column;
+
+    h3 {
+        margin-top: 0;
+    }
+
+    a {
+        @extend .dm-sans;
+        font-size: 17px;
+        padding: 15px;
+        margin: 10px 0;
+        background: #031c35f0;
+        border-radius: 30px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
     }
 }

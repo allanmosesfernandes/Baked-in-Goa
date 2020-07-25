@@ -1,0 +1,75 @@
+@import './typography.scss';
+
+.like {
+    @extend .ibm-flex;
+    color: #edf5e1;
+    font-size: 30px;
+    text-align: center;
+}
+
+.social {
+    font-family: 'Notable', sans-serif;
+    font-size: 30px;
+    color: #000;
+}
+
+.pizza-movin {
+    -webkit-animation: rotating 2s ease-in-out infinite;
+    -moz-animation: rotating 2s ease-in-out infinite;
+    -ms-animation: rotating 2s ease-in-out infinite;
+    -o-animation: rotating 2s ease-in-out infinite;
+    animation: rotating 2s ease-in-out infinite;    
+    max-width: 40px;
+
+    img {
+        max-width: 40px;
+    }
+}
+
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(30deg);
+      }
+}
+
+.forGram {
+    @extend .pacificio;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+
+.social-div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    a {
+        margin: 0 10px;
+    }
+
+    img {
+        width: 40px;
+    }
+}
+
+
+.createdBy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    @extend .pacificio;
+    color: #fff;
+    border-top: 1px solid #fff;
+
+    a {
+        text-decoration: underline;
+        cursor: pointer;
+        color: inherit;
+    }
+}
