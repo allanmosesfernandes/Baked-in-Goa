@@ -1,0 +1,24 @@
+@import './typography.scss';
+
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 120px 0;
+
+    h1 {
+        @extend .ibm-flex;
+        // font-family: 'Quicksand', sans-serif;
+        font-family: 'Notable', sans-serif;
+        font-size: 30px;
+        text-transform: uppercase;
+
+    }
+    .tight-text {
+        @extend .dm-sans;
+        font-size: 24px;
+        color: #edf5e1;
+        padding: 0 20px;
+    }
+}

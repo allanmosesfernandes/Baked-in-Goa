@@ -62,3 +62,44 @@
     bottom: 0;
     margin: auto;
 }
+
+
+.google {
+    padding: 30px;
+    width: 100%;
+    background-color: #05386bad;
+    overflow-x: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 5px solid #edf5e1;
+    border-bottom: 5px solid #edf5e1;
+    h2, h3 {
+        text-align: center;
+        @extend .ibm-flex;
+    }
+
+    p {
+        @extend .dm-sans;
+        font-size: 24px;
+    }
+
+
+    h3 {
+        font-size: 24px;
+    }
+}
+
+
+.contact-div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        height: 100%;
+        margin-right: 20px;
+    }
+}
