@@ -23,9 +23,8 @@
         </svg>
 
         <div class="nav-menu">
-            <p>Menu</p>
-            <img src="./assets/images/open-menu32.png" onclick="openNav()"   role="button"
-            tabIndex="0">
+            <a href="./menu.html">Menu</a>
+            <img src="./assets/images/open-menu32.png" onclick="openNav()" role="button" tabIndex="0">
             <!-- <p style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</p> -->
 
         </div>
@@ -33,11 +32,26 @@
     </nav>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-      </div>
+        <a href="#" onclick="closeNav()">About</a>
+        <a href="#safety" onclick="closeNav()">Safety</a>
+        <a href="#catering" onclick="closeNav()">Catering</a>
+        <a href="#locationDave" onclick="closeNav()">Location</a>
+
+
+        <div class="menu-social">
+            <a href="https://instagram.com/bakedingoa?igshid=106vcbhh0dfj2">
+                <img src="./assets/images/instagram-white.png">
+            </a>
+            <a href="https://www.facebook.com/Baked-in-Goa-2491720944229867/">
+                <img src="./assets/images/facebook-white.png">
+            </a>
+
+            <a href="https://api.whatsapp.com/send?phone=918806656297&text=Hi!%20Your%20website%20got%20me%20here">
+                <img src="./assets/images/whatsapp.png">
+            </a>
+        </div>
+
+    </div>
     <section class="first-fold" id="areyhero">
         <div class="hero">
             <h1>Baked <br>in <br>Goa</h1>
@@ -59,9 +73,9 @@
         </div>
 
 
-    <div class="easyMenu">
+        <div class="easyMenu">
 
-    </div>
+        </div>
     </section>
     <section class="about">
         <h1>About</h1>
@@ -78,7 +92,7 @@
         </div>
     </section>
 
-    <section class="safety">
+    <section class="safety" id="safety">
         <h1>Safe & Hygienic </h1>
         <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_1KyL2Q.json" background="transparent"
             speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
@@ -95,7 +109,7 @@
 
     </section>
 
-    <section class="catering">
+    <section class="catering" id="catering">
         <h1>Catering!</h1>
         <p class="tight-text">
             Party Planning?🥳<br>Tell us about it! We'd love to serve at your events!
@@ -109,7 +123,7 @@
         </div>
     </section>
 
-    <section class="location">
+    <section class="location" id="location">
         <h1>Find us at!</h1>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3843.9986506903924!2d73.75943331520224!3d15.538203057575782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfc1e524a26185%3A0x92b3ca3bf0886e9e!2sBaked%20in%20Goa%20cafe!5e0!3m2!1sen!2sin!4v1595621369383!5m2!1sen!2sin"
@@ -158,9 +172,10 @@
                 <a href="https://www.facebook.com/Baked-in-Goa-2491720944229867/">
                     <img src="./assets/images/facebook-white.png">
                 </a>
+ 
             </div>
 
-            
+
         </div>
 
 
@@ -172,16 +187,17 @@
             <a href="https://allanmoses.codes">Allan Moses Fernandes</a>
         </p>
     </section>
-  <script src="./main.js"></script>
-  <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-    }
-    
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
     </script>
+    <script src="./main.js"></script>
+
 </body>
 
 </html>
