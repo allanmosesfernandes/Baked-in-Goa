@@ -5,7 +5,11 @@
 .about {
     @extend .ibm-flex;
     text-align: center;
-    background-image: url('https://trianglify.io/p/w:1440!h:900!x:YlGn!v:0.917!c:0.107!s:nyzlyb!f:il!i:0.30');
+
+    h1 {
+        font-size: 30px;
+        text-transform: uppercase;
+    }
 }
 
 
@@ -125,7 +129,10 @@
     }
     .tight-text {
         @extend .dm-sans;
-        font-size: 24px;
+        font-size: 16px;
+        line-height: 26px;
+        margin: 0;
+        margin-bottom: 20px;
         color: #edf5e1;
         padding: 0 20px;
     }

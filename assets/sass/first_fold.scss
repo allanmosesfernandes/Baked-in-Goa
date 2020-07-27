@@ -4,6 +4,8 @@
 nav {
 
     // background-image: url('../images/svg.svg');
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
     background-color: transparent;
     background-repeat: no-repeat;
     width: 100%;
@@ -14,6 +16,8 @@ nav {
     right: 0;
     bottom: 0;
     z-index: 99;
+    display: flex;
+    color: #edf5e1;
 
     .lode {
         position: absolute;
@@ -103,8 +107,10 @@ nav {
     }
 
     p {
-        font-family: 'Muli', sans-serif;
-        font-size: 16px;
+        font-family: "DM Sans", sans-serif;
+        font-size: 24px;
+        letter-spacing: normal;
+        line-height: 30px;
     }
 }
 
@@ -191,5 +197,69 @@ nav {
 
     100% {
         opacity: 0;
+    }
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    background-color: rgb(19 103 89 / 95%);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: "DM Sans", sans-serif;
+    color: #edf5e1;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #edf5e1;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+        color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    p {
+        margin: 0 30px;
+    }
+
+    img {
+        width: 24px;
+        margin-right: 20px;
     }
 }
