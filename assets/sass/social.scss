@@ -1,5 +1,12 @@
 @import './typography.scss';
 
+
+
+@font-face {
+    font-family: futura;
+    src: url('../futura/FuturaPTLight.otf');
+  }
+
 .like {
     @extend .ibm-flex;
     color: #edf5e1;
@@ -61,7 +68,7 @@
 
 .createdBy {
     display: flex;
-    font-family: "DM Sans", sans-serif;
+    font-family: futura, sans-serif;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
