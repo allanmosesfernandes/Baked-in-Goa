@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#00cba9">
 
-    <title>🍕Baked in Goa</title>
+    <title>Baked in Goa</title>
     <link rel="stylesheet" href="./assets/sass/main.scss">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
+	<link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
 
 </head>
 
@@ -24,14 +24,13 @@
 
         <div class="nav-menu">
             <a href="./menu.html">Menu</a>
-            <img src="./assets/images/open-menu32.png" onclick="openNav()" role="button" tabIndex="0">
+            <img src="./assets/images/open-menu32.png" id="openX" role="button" tabIndex="0">
             <!-- <p style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</p> -->
-
         </div>
 
     </nav>
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" id="closeX">&times;</a>
         <a href="#" onclick="closeNav()">About</a>
         <a href="#safety" onclick="closeNav()">Safety</a>
         <a href="#catering" onclick="closeNav()">Catering</a>
