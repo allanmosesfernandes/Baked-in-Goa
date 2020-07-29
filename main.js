@@ -1,13 +1,13 @@
 // Select all links with hashes
 
 $(document).ready(function(){
-    // $('.your-class').slick({
-    //     dots: true,
-    //     infinite: false,
-    //     speed: 300,
-    //     slidesToShow: 4,
-    // });
-
+    $('.your-class').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+    });
+    
     function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
       }
