@@ -19,12 +19,21 @@ $(document).ready(function () {
     }
 
 
-
     $('.your-class').slick({
         dots: true,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 4,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });
+
+    $('.center').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
     });
 
 
