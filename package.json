@@ -23,6 +23,6 @@
     "sass": "^1.26.9"
   },
   "dependencies": {
-    "fullpage.js": "^3.0.9"
+    "fullpage.js": "^4.0.5"
   }
 }
